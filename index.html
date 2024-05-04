@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eus.thacs Photo Gallery</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #222;
+        color: #fff;
+    }
+    .header {
+        background-color: #333;
+        padding: 20px 0;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #555;
+    }
+    .header h1 {
+        margin: 0;
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+    .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>eus.thacs Photo Gallery</h1>
+</div>
+
+<div class="container">
+    <div class="gallery">
+        <img src="https://placeimg.com/400/300/any" alt="Image 1">
+        <img src="https://placeimg.com/400/300/nature" alt="Image 2">
+        <img src="https://placeimg.com/400/300/architecture" alt="Image 3">
+        <img src="https://placeimg.com/400/300/people" alt="Image 4">
+        <img src="https://placeimg.com/400/300/animals" alt="Image 5">
+        <img src="https://placeimg.com/400/300/tech" alt="Image 6">
+        <!-- Add more images as needed -->
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 eus.thacs. All rights reserved.</p>
+</div>
+
+</body>
+</html>
